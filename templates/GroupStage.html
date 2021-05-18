@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Group Stage Winners
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/WC.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/GS.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            Group Stage Results
+        </div>
+    </header>
+    <div class="main-content" style="background-image: url(/static/inning.png); margin: 0; background-size: cover;background-repeat: round;border: none;min-height: 100vh;">
+        <div id="Group-Stage">
+            <form action="{{url_for('Super12')}}" method="post">
+                <h1 style="margin-top: 0; padding-top: 21px">Winners from Group A</h1>
+                <table>
+                    <tr>
+                        <td><img src="/static/Ireland.jpg"><div class="fade">Ireland</div></td>
+                        <td><img src="/static/SL.jpg"><div class="fade">Sri Lanka</div></td>
+                    </tr>
+                </table>
+                <h1>Winners from Group B</h1>
+                <table>
+                    <tr>
+                        <td><img src="/static/Bangladesh.png"><div class="fade">Bangladesh</div></td>
+                        <td><img src="/static/Scotland.jpg"><div class="fade">Scotland</div></td>
+                    </tr>
+                </table>
+                <div class="submit">
+                    <input type="submit" id="fs12" name="fs12" value="Final Super 12">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

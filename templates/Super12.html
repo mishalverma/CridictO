@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Top 12
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/WC.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/S12.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            Top 12
+        </div>
+    </header>
+    <div class="main-content" style="background-image: url(/static/inning.png); margin: 0; background-size: cover;background-repeat: round;border: none;min-height: 100vh;">
+        <div id="Super-12">
+            <form action="{{url_for('SemiFinals')}}" method="post">
+                <table>
+                    <tr>
+                        <td><img src="/static/Afghanistan.png">
+                            <div class="fade">Afghanistan</div></img>
+                        </td>
+                        <td><img src="/static/Australia.png">
+                            <div class="fade">Australia</div>
+                        </td>
+                        <td><img src="/static/Bangladesh.png">
+                            <div class="fade">Bangladesh</div>
+                        </td>
+                        <td><img src="/static/England.jpg">
+                            <div class="fade">England</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/static/India.jpg">
+                            <div class="fade">India</div>
+                        </td>
+                        <td><img src="/static/Ireland.jpg">
+                            <div class="fade">Ireland</div>
+                        </td>
+                        <td><img src="/static/NZ.jpg">
+                            <div class="fade">New Zealand</div>
+                        </td>
+                        <td><img src="/static/Pakistan.jpg">
+                            <div class="fade">Pakistan</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/static/Scotland.jpg">
+                            <div class="fade">Scotland</div>
+                        </td>
+                        <td><img src="/static/SL.jpg">
+                            <div class="fade">Sri Lanka</div>
+                        </td>
+                        <td><img src="/static/SA.jpg">
+                            <div class="fade">South Africa</div>
+                        </td>
+                        <td><img src="/static/WI.png">
+                            <div class="fade">West Indies</div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="submit">
+                    <input type="submit" id="psf" name="psf" value="Semi-Finals">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

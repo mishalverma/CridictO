@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Prediction
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/WC.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            Prediction Result
+        </div>
+    </header>
+    <div class="main-content" style="background-image: url(/static/inning.png); margin: 0; background-size: cover;background-repeat: round;border: none;min-height: 100vh;">
+        <div id="result" style="padding-top: 12.5%; text-align: center; font-size: 2.5rem; font-weight: bolder; color: black;">
+            {{result}}
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+body
+{
+	margin: 0;
+}
+/* Top */
+header
+{
+	height: 105px;
+}
+.header-container
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.logo
+{
+	padding-top: 15px;
+}
+.header-col-1
+{
+	flex: 20%;
+}
+.header-col-2
+{
+	margin-left: auto;
+	margin-right: auto;
+	flex: 40%;
+	justify-content: center;
+}
+.header-col-3
+{
+	margin-left: auto;
+	margin-right: auto;
+	flex: 40%;
+}
+.blink
+{
+	animation: blinker 0.5s linear infinite;
+    color: #000fff;
+    font-size: 25px;
+    font-weight: bold;
+	padding-top: 25px;
+	text-align: center;
+}
+.blink:hover
+{
+	cursor:pointer;
+}
+@keyframes blinker 
+{
+	50%
+	{
+	  opacity: 0;
+	}
+}
+.header-col-2 table
+{
+	padding-top: 35px;
+	font-weight: 550 ;
+
+}
+.header-col-2 table a
+{	
+	color: green;
+	font-size: 1.25em;
+	text-decoration: none;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* Body */
+.main-content
+{
+	background-image: url(inning.png);
+	background-size: cover;	/*To make in cover the whole content*/
+	background-repeat: round;
+	border: none;
+	min-height: 100vh;
+	width: 100%;
+	margin-top: 0%;
+}
+table
+{
+	margin: auto;
+	text-align: right;
+	text-size-adjust: auto;
+}
+.format-selector label
+{
+	font-size: 25px;
+    padding-right: 10px;
+	color: #ffffff;
+}
+.team-selector label
+{
+	font-size: 25px;
+	color: #ffffff;
+	padding-left: 20px;
+}
+.current-score label
+{
+	font-size: 25px;
+	color: #ffffff;
+	padding-left: 20px;
+}
+.submit
+{
+	width: 10%;
+	padding-top: 25px;
+	margin:auto;
+}
+
+/* Body Live Score*/
+#livescore
+{
+	margin-bottom: 0px;
+}
+iframe
+{
+	width: 100%;
+	height: 450px;
+}
+
+/* Body Innings*/
+#inning h1
+{
+	padding-top: 50px;
+	text-align: center;
+}
+#inning-form form
+{
+	margin-bottom: 50px;
+	width: 80%;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+table #inning-type, #score, #wickets, #overs, #balls, #struns, #nstruns
+{
+	width: 100%;
+}
+#inningsubmit
+{
+	padding: 10px 25px;
+	border-radius: 15px;
+	background-color: red;
+	font-size: 1.25em;
+	color: #ffffff;
+}
+
+/* Body Probability*/
+#probabality h1
+{
+	text-align: center;
+}
+#prob-form form
+{
+	margin-bottom: 50px;
+	width: 80%;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#probsubmit
+{
+	padding: 10px 25px;
+	border-radius: 15px;
+	background-color: lightgreen;
+	font-size: 1.25em;
+	color: #ffffff;
+}
+
+/* Body V/S*/
+#vs h1
+{
+	text-align: center;
+}
+#vs-form form
+{
+	margin-bottom: 50px;
+	width: 80%;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#vssubmit
+{
+	padding: 10px 25px;
+	margin-bottom: 50px;
+	border-radius: 15px;
+	background-color: red;
+	font-size: 1.25em;
+	color: #ffffff;
+}
+input
+{
+	border-radius: 10px;
+}
+  
+  
+  
+  
+  .overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+  }
+  .overlay:target {
+	visibility: visible;
+	opacity: 1;
+  }
+  
+  .popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	width: 30%;
+	position: relative;
+	transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+	margin-top: 0;
+	color: #333;
+	font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+  }
+  .popup .close:hover {
+	color: #06D85F;
+  }
+  .popup .content {
+	max-height: 30%;
+	overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+	.box{
+	  width: 70%;
+	}
+	.popup{
+	  width: 70%;
+	}
+  }
+
+  

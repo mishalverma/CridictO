@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Semi-Finalists
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/WC.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/SF.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            Semi Final Matches
+        </div>
+    </header>
+    <div class="main-content" style="background-image: url(/static/inning.png); margin: 0; background-size: cover;background-repeat: round;border: none;min-height: 100vh;">
+        <div id="Semi-Finals">
+            <form action="{{url_for('Finals')}}" method="post">
+                <h1 style="margin-top: 0; padding-top: 21px">Semi-Finals 1</h1>
+                <table>
+                    <tr>
+                        <td><img src="/static/NZ.jpg">
+                            <div class="fade">New Zealand</div>
+                        </td>
+                        <td>V/S</td>
+                        <td><img src="/static/India.jpg">
+                            <div class="fade">India</div>
+                        </td>
+                    </tr>
+                </table>
+                <h1>Semi-Finals 2</h1>
+                <table>
+                    <tr>
+                        <td><img src="/static/England.jpg">
+                            <div class="fade">England</div>
+                        </td>
+                        <td>V/S</td>
+                        <td><img src="/static/Pakistan.jpg">
+                            <div class="fade">Pakistan</div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="submit">
+                    <input type="submit" id="pf" name="pf" value="Finals">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

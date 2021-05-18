@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Final Winner
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/WC.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Finals.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            T20 World Cup Finals
+        </div>
+    </header>
+    <div class="main-content" style="background-image: url(/static/inning.png); margin: 0; background-size: cover;background-repeat: round;border: none;min-height: 100vh;">
+        <div id="Finals">
+            <form action="{{url_for('Winner')}}" method="post">
+                <table>
+                    <tr>
+                        <td><img src="/static/India.jpg">
+                            <div class="fade">India</div>
+                        </td>
+                        <td>
+                            <h1>V/S</h1>
+                        </td>
+                        <td><img src="/static/England.jpg">
+                            <div class="fade">England</div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="submit">
+                    <input type="submit" id="pw" name="pw" value="Winner">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        World Cup Predictor
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/WC.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            World Cup Predictor
+        </div>
+    </header>
+    <div class="main-content" style="background-image: url(/static/inning.png); margin: 0; background-size: cover;background-repeat: round;border: none;min-height: 100vh;">
+        <div id="TOP8">
+            <h1 style="margin-top: 0; padding-top: 21px">Top 8</h1>
+            <table>
+                <tr>
+                    <td><img src="/static/Afghanistan.png"><div class="fade">Afghanistan</div></img></td>
+                    <td><img src="/static/Australia.png"><div class="fade">Australia</div></td>
+                    <td><img src="/static/England.jpg"><div class="fade">England</div></td>
+                    <td><img src="/static/India.jpg"><div class="fade">India</div></td>
+                </tr>
+                <tr>
+                    <td><img src="/static/NZ.jpg"><div class="fade">New Zealand</div></td>
+                    <td><img src="/static/Pakistan.jpg"><div class="fade">Pakistan</div></td>
+                    <td><img src="/static/SA.jpg"><div class="fade">South Africa</div></td>
+                    <td><img src="/static/WI.png"><div class="fade">West Indies</div></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Group-Stage">
+            <h1>Group Stage</h1>
+            <form action="{{url_for('GroupStage')}}" method="post">
+                <table>
+                    <tr>
+                        <td><img src="/static/Bangladesh.png"><div class="fade">Bangladesh</div></td>
+                        <td><img src="/static/Ireland.jpg"><div class="fade">Ireland</div></td>
+                        <td><img src="/static/Namibia.jpg"><div class="fade">Namibia</div></td>
+                        <td><img src="/static/Netherlands.jpg"><div class="fade">Netherlands</div></td>
+
+                    </tr>
+                    <tr>
+                        <td><img src="/static/Oman.jpg"><div class="fade">Oman</div></td>
+                        <td><img src="/static/PNG.jpg"><div class="fade">Papua New Gineua</div></td>
+                        <td><img src="/static/Scotland.jpg"><div class="fade">Scotland</div></td>
+                        <td><img src="/static/SL.jpg"><div class="fade">Sri Lanka</div></td>
+
+                    </tr>
+                </table>
+                <div class="submit">
+                    <input type="submit" id="pgs" name="pgs" value="Predict Winner for Group Stage">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
