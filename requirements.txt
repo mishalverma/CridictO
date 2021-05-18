@@ -7,6 +7,7 @@ itsdangerous==1.1.0
 Jinja2==2.11.3
 joblib
 MarkupSafe==1.1.1
+gunicorn
 numpy
 pandas==1.2.4
 python-dateutil==2.8.1
